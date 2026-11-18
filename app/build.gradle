@@ -16,11 +16,20 @@ android {
         versionName "1.0.${run}"
     }
 
+    signingConfigs {
+        // Clé fixe : les mises à jour s'installent par-dessus, sans désinstaller.
+        nutri {
+            storeFile file('nutri.keystore')
+            storePassword 'nutri-app-2026'
+            keyAlias 'nutri'
+            keyPassword 'nutri-app-2026'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
-            // Pas de Play Store : on signe avec la clé de débogage générée par GitHub.
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.nutri
         }
     }
 

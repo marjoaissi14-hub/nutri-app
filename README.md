@@ -12,7 +12,7 @@ L'assistante IA, la dictée et les photos utilisent ton compte Claude : rien à 
 3. Si Android le demande, autorise l'installation depuis Chrome (c'est normal hors Play Store), puis touche **Installer**.
 4. Au premier lancement, connecte-toi à Claude **une fois** dans l'app : « Continuer avec l'e-mail », ouvre le lien reçu par mail, puis recopie le code affiché dans l'app.
 
-Si une ancienne version est installée, désinstalle-la d'abord (appui long sur l'icône, puis Désinstaller) : tes données sont dans ton compte Claude, rien n'est perdu.
+À partir de la version 1.0.3, les mises à jour s'installent par-dessus l'ancienne version. Pour passer d'une version plus ancienne à la 1.0.3, désinstalle d'abord l'ancienne (appui long sur l'icône, puis Désinstaller) : tes données sont dans ton compte Claude, rien n'est perdu.
 
 ## Comment c'est fabriqué
 
