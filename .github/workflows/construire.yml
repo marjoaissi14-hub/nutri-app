@@ -1,0 +1,41 @@
+name: Construire l'app Android
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Construire le fichier de l'app
+        run: gradle assembleRelease --no-daemon --stacktrace
+
+      - name: Renommer
+        run: cp app/build/outputs/apk/release/app-release.apk Nutri.apk
+
+      - name: Publier le téléchargement
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: Nutri 1.0.${{ github.run_number }}
+          body: |
+            Sur ton téléphone Android, touche **Nutri.apk** ci-dessous pour le télécharger, puis ouvre-le pour installer l'app.
+            Android te demandera d'autoriser l'installation depuis Chrome : c'est normal pour une app hors Play Store.
+          files: Nutri.apk
+          make_latest: true
