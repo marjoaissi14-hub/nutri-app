@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Écran invisible : l'app s'ouvre directement, sans écran blanc -->
-    <style name="Lanceur" parent="@android:style/Theme.Translucent.NoTitleBar">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowAnimationStyle">@null</item>
+    <style name="Nutri" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/nutri_fond</item>
+        <item name="android:statusBarColor">@color/nutri_fond</item>
+        <item name="android:navigationBarColor">@color/nutri_fond</item>
     </style>
 </resources>

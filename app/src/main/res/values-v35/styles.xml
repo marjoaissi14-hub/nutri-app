@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Nutri" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/nutri_fond</item>
+        <item name="android:statusBarColor">@color/nutri_fond</item>
+        <item name="android:navigationBarColor">@color/nutri_fond</item>
+        <!-- Garde l'app sous la barre d'état plutôt que dessous -->
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

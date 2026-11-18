@@ -2,15 +2,17 @@
 
 App Nutri : suivi nutrition et sport.
 
-Cette app Android ouvre Nutri (hébergée dans Claude) en plein écran, avec sa propre icône.
-L'assistante IA, la dictée et les photos utilisent ta connexion Claude dans Chrome : rien à payer.
+Cette app Android affiche Nutri (hébergée dans Claude) en plein écran, comme une vraie app : sans barre d'adresse ni en-tête Claude.
+L'assistante IA, la dictée et les photos utilisent ton compte Claude : rien à payer.
 
 ## Installer sur ton téléphone Android
 
 1. Sur ton téléphone, ouvre **[le dernier téléchargement](https://github.com/marjoaissi14-hub/nutri-app/releases/latest/download/Nutri.apk)**.
 2. Ouvre le fichier **Nutri.apk** téléchargé.
 3. Si Android le demande, autorise l'installation depuis Chrome (c'est normal hors Play Store), puis touche **Installer**.
-4. Vérifie que tu es connectée à Claude dans **Chrome** (claude.ai) : l'app s'appuie sur cette connexion.
+4. Au premier lancement, connecte-toi à Claude **une fois** dans l'app : « Continuer avec l'e-mail », ouvre le lien reçu par mail, puis recopie le code affiché dans l'app.
+
+Si une ancienne version est installée, désinstalle-la d'abord (appui long sur l'icône, puis Désinstaller) : tes données sont dans ton compte Claude, rien n'est perdu.
 
 ## Comment c'est fabriqué
 

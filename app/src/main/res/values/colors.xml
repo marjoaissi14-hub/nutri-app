@@ -2,4 +2,5 @@
 <resources>
     <color name="nutri_rose">#F0528C</color>
     <color name="nutri_prune">#8A2B8C</color>
+    <color name="nutri_fond">#14080F</color>
 </resources>
